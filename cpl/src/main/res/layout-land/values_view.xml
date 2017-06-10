@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/hashtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_margin"
+        android:layout_marginEnd="@dimen/hex_margin"
+        android:layout_marginRight="@dimen/hex_margin"
+        android:text="@string/hex"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hashtag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hashtext"
+        android:layout_marginBottom="@dimen/common_margin"
+        android:layout_marginEnd="@dimen/circles_margin"
+        android:layout_marginRight="@dimen/circles_margin"
+        android:text="@string/hashtag"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hashtext"
+        android:layout_toEndOf="@+id/hashtag"
+        android:layout_toRightOf="@+id/hashtag"
+        android:background="@null"
+        android:digits="0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f,A,B,C,D,E,F"
+        android:ellipsize="end"
+        android:inputType="textCapCharacters|textNoSuggestions"
+        android:maxLength="2"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/hex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hashtext"
+        android:layout_marginBottom="@dimen/common_margin"
+        android:layout_toEndOf="@+id/alpha"
+        android:layout_toRightOf="@+id/alpha"
+        android:background="@null"
+        android:digits="0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f,A,B,C,D,E,F"
+        android:inputType="textCapCharacters|textNoSuggestions"
+        android:maxLength="6"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/rgb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hashtag"
+        android:layout_marginBottom="@dimen/common_margin"
+        android:layout_marginEnd="@dimen/circles_margin"
+        android:layout_marginRight="@dimen/circles_margin"
+        android:text="@string/rgb"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgb"
+        android:layout_marginEnd="@dimen/circles_margin"
+        android:layout_marginRight="@dimen/circles_margin"
+        android:background="@null"
+        android:ellipsize="end"
+        android:inputType="number"
+        android:max="255"
+        android:maxLength="3"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgb"
+        android:layout_marginEnd="@dimen/circles_margin"
+        android:layout_marginRight="@dimen/circles_margin"
+        android:layout_toEndOf="@+id/a"
+        android:layout_toRightOf="@+id/a"
+        android:background="@null"
+        android:ellipsize="end"
+        android:inputType="number"
+        android:max="255"
+        android:maxLength="3"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgb"
+        android:layout_marginEnd="@dimen/circles_margin"
+        android:layout_marginRight="@dimen/circles_margin"
+        android:layout_toEndOf="@+id/r"
+        android:layout_toRightOf="@+id/r"
+        android:background="@null"
+        android:ellipsize="end"
+        android:inputType="number"
+        android:max="255"
+        android:maxLength="3"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgb"
+        android:layout_marginBottom="@dimen/common_margin"
+        android:layout_toEndOf="@+id/g"
+        android:layout_toRightOf="@+id/g"
+        android:background="@null"
+        android:ellipsize="end"
+        android:inputType="number"
+        android:max="255"
+        android:maxLength="3"
+        android:textSize="14sp" />
+
+</RelativeLayout>

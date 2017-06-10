@@ -16,6 +16,7 @@
         </activity>
         <activity
             android:name=".PreferenceActivity"
+            android:screenOrientation="portrait"
             android:label="@string/settings"/>
     </application>
 

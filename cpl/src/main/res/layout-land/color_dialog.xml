@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/valuesView"
+        android:layout_width="130sp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <include
+
+            layout="@layout/values_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/seekbarView"
+        layout="@layout/seekbar_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/valuesView"
+        android:layout_toRightOf="@+id/valuesView" />
+
+    <include
+        android:id="@+id/palette"
+        layout="@layout/palette_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekbarView"
+        android:layout_marginEnd="@dimen/common_margin"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_marginStart="@dimen/common_margin"
+        android:layout_toEndOf="@+id/valuesView"
+        android:layout_toRightOf="@+id/valuesView" />
+
+</RelativeLayout>
