@@ -1,5 +1,7 @@
 # Color picker library
 
+# DEPRECATION NOTICE: This project is no longer mantained and has been replaced by ColorBox: https://github.com/enricocid/ColorBox-library
+
 ### Features
 
 - Live color preview;
